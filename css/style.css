@@ -173,6 +173,12 @@ section:first-of-type .intro-text {
   max-width: 100%;
   min-width: 300px;
 }
+/* fold mobile */
+@media(max-width:280px) {
+  section:first-of-type .intro-text {
+    min-width: 250px;
+  }
+}
 
 section:first-of-type .intro-text h1 {
   color: var(--main-color);
@@ -194,7 +200,12 @@ section:nth-of-type(2) .container {
   grid-gap: 20px;
   text-align: center;
 }
-
+/* fold mobile */
+@media(max-width:280px) {
+  section:nth-of-type(2) .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
 section:nth-of-type(2) .container p {
   color: #7c8287;
   line-height: 1.8;
@@ -225,7 +236,12 @@ section:nth-of-type(3) .services {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
-
+@media(max-width:280px) {
+  section:nth-of-type(3) .services { 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+}
 section:nth-of-type(3) .services .serv {
   display: flex;
   margin-bottom: 30px;
@@ -304,7 +320,12 @@ section:nth-of-type(4) .main {
   column-gap: 30px;
   align-content: center;
 }
-
+@media(max-width:280px) {
+  section:nth-of-type(4) .main { 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+}
 section:nth-of-type(4) .card {
   background-color: #fff;
 }
@@ -494,6 +515,12 @@ section:nth-of-type(6) .social i {
   section:nth-of-type(6) .info .first-P,
   section:nth-of-type(6) .info a {
     font-size: 26px;
+  }
+}
+@media(max-width:280px) {
+  section:nth-of-type(6) .info .first-P,
+    section:nth-of-type(6) .info a {
+  font-size: 22px !important
   }
 }
 
